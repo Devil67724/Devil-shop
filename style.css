@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #0d0d0d;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+nav a:hover {
+  color: red;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+#products {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#products h2 {
+  font-size: 32px;
+}
+
+.product {
+  background: #121212;
+  border: 1px solid #252525;
+  border-radius: 12px;
+  padding: 30px;
+  width: 280px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  border-color: red;
+}
+
+#products {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#products > .product {
+  display: inline-block;
+  margin: 15px;
+  vertical-align: top;
+}
+.product h3 {
+  font-size: 24px;
+}
+
+.product p {
+  color: #aaa;
+}
+
+button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #cc0000;
+}
+.hero-label {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 65px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.hero-text {
+  color: #aaa;
+  font-size: 18px;
+  margin: 15px 0 30px;
+}
+
+.shop-button {
+  display: inline-block;
+  background: red;
+  color: white;
+  text-decoration: none;
+  padding: 13px 30px;
+  border-radius: 7px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.shop-button:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+}
+.product {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.product h3 {
+  color: white;
+  margin-bottom: 12px;
+}
+
+.product p {
+  margin: 8px 0;
+}
+
+.product p:nth-of-type(2) {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.product .buy-button {
+  margin-top: 15px;
+}
+footer {
+  margin-top: 80px;
+  padding: 40px 20px;
+  text-align: center;
+  background: #0d0d0d;
+  border-top: 1px solid #222;
+}
+
+footer h3 {
+  color: red;
+  font-size: 22px;
+}
+
+footer p {
+  color: #888;
+}
+
+.discord-link {
+  display: inline-block;
+  margin: 15px 0;
+  color: white;
+  text-decoration: none;
+  border: 1px solid red;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.discord-link:hover {
+  background: red;
+}
+
+.copyright {
+  margin-top: 25px;
+  font-size: 13px;
+}
+@media (max-width: 700px) {
+
+  header {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .product {
+    width: 90%;
+    max-width: 320px;
+    margin: 15px auto;
+    display: block !important;
+  }
+
+  #products > .product {
+    display: block;
+  }
+
+  footer {
+    padding: 35px 15px;
+  }
+}
